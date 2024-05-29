@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <style>
+        a {
+            width: 30%;
+            color: rgb(77, 10, 10);
+            float: right;
+            font-size: large;
+            padding: 15px 0;
+        }
+        div {
+            width: 80%;
+            background-color: grey;
+            margin: 0 auto;
+        }
+        .form-group {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+        label {
+            width: 30%;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        textarea {
+            width: 50%;
+            padding: 8px;
+            margin: 0% 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        textarea {
+            height: 100px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2><a href="#">student registation form</a></h2>
+<div>
+    <form action="/submit-form" method="POST">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your first name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="ln">last Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="it should contain@." required>
+        </div>
+
+        <div class="form-group">
+            <label for="nm">Mobile:</label>
+            <input type="number" id="name" name="name" placeholder="only 10 digit are allowed" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="gn">gender:</label>
+            <input type="radio" id="name" name="name" placeholder="" required>male
+            <input type="radio" id="name" name="name" placeholder="" required>female
+        </div>
+
+        <div class="form-group">
+            <label for="bt">date of birth :</label>
+            <input type="date" id="name" name="name" placeholder="" required >
+        </div>
+        
+        <div class="form-group">
+            <label for="ad">address:</label><br>
+            <textarea id="message" name="message" placeholder="" required></textarea>
+        </div>
+        
+        <div class="form-group">
+            <label for="ct">city:</label><br>
+            <input type="text" id="name" name="name" placeholder="" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="ap">area PIN:</label><br>
+            <input type="number" id="name" name="name" placeholder="" required >
+        </div>
+        
+        <div class="form-group">
+            <label for="st">state:</label><br>
+            <input type="text" id="name" name="name" placeholder="" required>
+        </div>
+
+        <div class="form-group">
+            <label for="ql">qualification:</label><br>
+            <select name="qualification " id="qualification">
+                <option value="bca">bca</option>
+                <option value="b.a">b.a</option>
+                <option value="bcom">bcom</option>
+            </select>
+        </div>
+
+        
+        <div class="form-group checkbox">
+            <label for="sl">specialization:</label><br>
+            <div class="mn" style="display: block;">
+            <div class="cx" 
+            >
+            <input type="checkbox" id="name" name="name" placeholder="" required>computer science 
+        </div>
+        <div class="cx">
+            <input type="checkbox" id="name" name="name" placeholder="" required>information technology
+        </div>
+
+            <div class="cx">
+                <input type="checkbox" id="name" name="name" placeholder="" required>computer architecture 
+            </div>
+
+            <div class="cx">
+                    <input type="checkbox" id="name" name="name" placeholder="" required>tale communication 
+                </div>
+            </div></div>
+        
+            <div class="form-group">
+                <label for="ps">password:</label>
+                <input type="password" id="name" name="name" placeholder="" >
+            </div>
+            
+        <input type="submit" value="Submit" style="margin: 15px 0;" >
+    </form>
+</div>
+</body>
+</html>
